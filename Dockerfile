@@ -64,5 +64,5 @@ ENV FSLOUTPUTTYPE NIFTI_GZ
 
 # Freesurfer
 ENV FREESURFER_HOME /usr/local/freesurfer
-RUN source $FREESURFER_HOME/SetUpFreeSurfer.sh
+ENTRYPOINT source $FREESURFER_HOME/SetUpFreeSurfer.sh
 
